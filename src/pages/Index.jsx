@@ -14,8 +14,7 @@ function Homepages() {
     <>
       <h1>Simple Blog</h1>
       <div>
-        Cari Artikel :{" "}
-        <input type="text" onChange={changeSearch} placeholder="cari artikel" />
+        Cari Artikel : <input type="text" onChange={changeSearch} placeholder="cari artikel" />
       </div>
       <small>Di temukan data dengan pencarian dari kata {search}</small>
       {Posts.map(({ title, date, author, content }, index) => (
