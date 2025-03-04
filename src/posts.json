@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Introduction to React",
+        "content": "React is a JavaScript library for building user interfaces.",
+        "author": "John Doe",
+        "date": "2023-10-01"
+    },
+    {
+        "title": "Understanding State and Props",
+        "content": "State and props are core concepts in React.",
+        "author": "Jane Smith",
+        "date": "2023-10-02"
+    },
+    {
+        "title": "Component Lifecycle",
+        "content": "React components have a lifecycle that you can hook into.",
+        "author": "Alice Johnson",
+        "date": "2023-10-03"
+    }
+]
