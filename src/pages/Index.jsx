@@ -6,25 +6,13 @@ import { useEffect, useState } from "react";
 function Homepages() {
   const [posts, setPost] = useState(PostsData);
   const [totalPost, setTotalPost] = useState(0);
-  const [eksternalPost, seteksternalPost] = useState([]);
+  
 
   const onChangeSearchFromIndex = (value) => {
     const filterPost = PostsData.filter((item) => item.title.includes(value));
     setPost(filterPost);
     setTotalPost(filterPost.length);
   };
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => {
-        // console.log(response)
-       return response.json();
-      })
-      .then((json) => {
-        // console.log(json)
-        return seteksternalPost(json);
-      });
-  }, []);
 
   return (
     <>
@@ -40,11 +28,6 @@ function Homepages() {
           isNew={isNew}
         />
       ))}
-      <hr/>
-      <h2>eksternalPost</h2>
-      {eksternalPost.map((item, index) => {
-        <div key={index}>{item.title}</div>
-      })}
     </>
   );
 }
